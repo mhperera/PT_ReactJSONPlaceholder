@@ -35,16 +35,6 @@ body{
   font-size: 80px;
 }
 
-.list{
-  list-style-type: disc;
-  width: 85vw;
-  margin: auto;
-}
-
-.list-item{
-  padding: 20px;
-}
-
 header{
   width: 100vw;
   text-align: center;
@@ -73,4 +63,24 @@ header{
 .btn.selected{
   background-color: #9f4b4b;
   color: #eee;
+}
+
+table, tr, td{
+  border: 1px solid black;
+}
+
+td{
+  padding: 15px;
+  word-wrap: break-word;
+}
+
+table{
+  width: 100%;
+  table-layout: fixed;
+}
+
+.container{
+  width: 90vw;
+  text-align: center;
+  margin: auto;
 }

@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import ButtonComponent from './ButtonComponent';
-import { List } from './List';
+import TableComponent from './TableComponent';
 
 function App() {
 
-  const API_URL = 'https://jsonplaceholder.typicode.com/x';
+  const API_URL = 'https://jsonplaceholder.typicode.com/';
   const requestTypeList = [
     {
       id: 1,
@@ -48,6 +48,7 @@ function App() {
   },[requestType]);
 
   const handleClick = (type) => {
+    setFetchError('');
     setIsLoading(true);
     setRequestType(type)
   }
@@ -76,10 +77,11 @@ function App() {
 
         { !isLoading && !fetchError &&
 
-          <List
-            itemList={itemList}
-          />
-
+            <div className="container">
+              <TableComponent
+                itemList={itemList}
+              />
+            </div>
         }
 
     </div>
