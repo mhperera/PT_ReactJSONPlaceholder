@@ -13,6 +13,18 @@ body{
   background-color: #eee;
 }
 
+.loading-text{
+  font-size: 60px;
+  color: green;
+  text-align: center;
+}
+
+.error-text{
+  font-size: 40px;
+  color: red;
+  text-align: center;
+}
+
 .list{
   list-style-type: disc;
   width: 85vw;
@@ -40,4 +52,9 @@ header{
   border: none;
   border-radius: 3px;
   box-shadow: 2px 2px 5px 2px #c6c6c6;
+  transition: 0.3s;
+}
+.btn:hover{
+  background-color: #df6e6e;
+  color: #222;
 }

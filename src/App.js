@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import ButtonComponent from './ButtonComponent';
+import ListItemComponent from './ListItemComponent';
 
 function App() {
 
@@ -30,14 +31,13 @@ function App() {
 
       try {
         const response = await fetch(API_URL+requestType);
-        if(!response.ok) throw Error('Did not get expected data. :(');
+        if(!response.ok) throw Error('Did not get expected data :(');
         const data = await response.json();
         setItemList(data);
-        setIsLoading(false);
       } catch (error) {
         setFetchError(error.message);
       } finally {
-
+        setIsLoading(false);
       }
     }
 
@@ -48,6 +48,7 @@ function App() {
   },[requestType]);
 
   const handleClick = (type) => {
+    setIsLoading(true);
     setRequestType(type)
   }
 
@@ -75,10 +76,10 @@ function App() {
           <ul className='list'>
               {
                 itemList.map((item)=>(
-                  <li
+                  <ListItemComponent
                     key={item.id}
-                    className='list-item'
-                  > { JSON.stringify(item) } </li>
+                    item={item}
+                  />
                 ))
               }
           </ul>
