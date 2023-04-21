@@ -43,7 +43,7 @@ function App() {
 
     setTimeout(()=>{
       fetchItems();
-    },1000);
+    },500);
 
   },[requestType]);
 
@@ -62,6 +62,7 @@ function App() {
                 key = {item.id}
                 item = {item}
                 handleClick = {handleClick}
+                requestType={requestType}
               />
           )) }
 

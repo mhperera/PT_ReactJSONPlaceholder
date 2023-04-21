@@ -47,14 +47,20 @@ header{
   margin: 10px;
   font-size: 20px;
   font-weight: 600;
-  background-color: #222;
-  color: #eee;
+  background-color: #df6e6e;
+  color: #222;
   border: none;
   border-radius: 3px;
   box-shadow: 2px 2px 5px 2px #c6c6c6;
   transition: 0.3s;
 }
-.btn:hover{
-  background-color: #df6e6e;
-  color: #222;
+
+.btn:hover, .btn.selected:hover{
+  background-color: #222;
+  color: #eee;
+}
+
+.btn.selected{
+  background-color: #9f4b4b;
+  color: #eee;
 }
