@@ -12,3 +12,32 @@ body{
   color: #222;
   background-color: #eee;
 }
+
+.list{
+  list-style-type: disc;
+  width: 85vw;
+  margin: auto;
+}
+
+.list-item{
+  padding: 20px;
+}
+
+header{
+  width: 100vw;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.btn{
+  width: 30%;
+  padding: 10px 8px;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #222;
+  color: #eee;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px 2px #c6c6c6;
+}
