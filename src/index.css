@@ -14,15 +14,25 @@ body{
 }
 
 .loading-text{
-  font-size: 60px;
-  color: green;
+  font-size: 40px;
+  color: #9f4b4b;
   text-align: center;
+}
+
+.loading-text > span {
+  line-height: 30px;
+  font-size: 80px;
 }
 
 .error-text{
   font-size: 40px;
   color: red;
   text-align: center;
+}
+
+.error-text > span {
+  line-height: 30px;
+  font-size: 80px;
 }
 
 .list{

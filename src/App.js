@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import ButtonComponent from './ButtonComponent';
-import ListItemComponent from './ListItemComponent';
+import { List } from './List';
 
 function App() {
 
-  const API_URL = 'https://jsonplaceholder.typicode.com/';
+  const API_URL = 'https://jsonplaceholder.typicode.com/x';
   const requestTypeList = [
     {
       id: 1,
@@ -31,7 +31,7 @@ function App() {
 
       try {
         const response = await fetch(API_URL+requestType);
-        if(!response.ok) throw Error('Did not get expected data :(');
+        if(!response.ok) throw Error('Did not get expected data');
         const data = await response.json();
         setItemList(data);
       } catch (error) {
@@ -58,32 +58,27 @@ function App() {
         <header>
 
           { requestTypeList.map((item)=>(
+
               <ButtonComponent
                 key = {item.id}
                 item = {item}
                 handleClick = {handleClick}
                 requestType={requestType}
               />
+
           )) }
 
         </header>
 
-        { isLoading && <p className='loading-text'> Loading... </p> }
+        { isLoading && <p className='loading-text'> Loading... <br /><br /> <span> :D </span></p> }
 
-        { fetchError && <p className='error-text'> { `Error : ${fetchError}` } </p> }
+        { fetchError && <p className='error-text'> { `Error : ${fetchError}` } <br /><br /> <span> :( </span> </p> }
 
         { !isLoading && !fetchError &&
 
-          <ul className='list'>
-              {
-                itemList.map((item)=>(
-                  <ListItemComponent
-                    key={item.id}
-                    item={item}
-                  />
-                ))
-              }
-          </ul>
+          <List
+            itemList={itemList}
+          />
 
         }
 
