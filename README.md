@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+<p align="center">
+  <img alt="React-JSONPlaceholder" src="./src/assets/json-placeholder.png" width="200"/>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">🚀 React-JSONPlaceholder</h1>
 
-## Available Scripts
+<p align="center">
+  A simple React application that fetches and displays data from JSONPlaceholder API 🌎
+</p>
 
-In the project directory, you can run:
+<p align="center">
+  <a href="https://github.com/mhperera/React-JSONPlaceholder/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/mhperera/React-JSONPlaceholder"></a>
+  <a href="https://github.com/mhperera/React-JSONPlaceholder/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/mhperera/React-JSONPlaceholder"></a>
+  <a href="https://github.com/mhperera/React-JSONPlaceholder/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/mhperera/React-JSONPlaceholder"></a>
+  <a href="https://github.com/mhperera/React-JSONPlaceholder/blob/main/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/mhperera/React-JSONPlaceholder"></a>
+</p>
 
-### `npm start`
+<p align="center">
+  <img alt="React-JSONPlaceholder Demo" src="./src/assets/demo.gif" width="600"/>
+</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Table of Contents
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [About the Project](#about-the-project)
+  - [Built With](#built-with)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### `npm test`
+## About the Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This is a simple React application that fetches data from the [JSONPlaceholder API](https://jsonplaceholder.typicode.com/) and displays it in a user-friendly manner. The application provides a simple user interface that allows users to view and filter posts, as well as view details of individual posts.
 
-### `npm run build`
+### Built With
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This application was built using the following technologies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Axios](https://github.com/axios/axios)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+To get started with this project, follow these steps:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js
+- NPM
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository
+   ```sh
+   git clone https://github.com/mhperera/React-JSONPlaceholder.git
+   
+2. Install NPM packages
+   ```sh
+   npm install
 
-## Learn More
+3. Start the development server
+   ```sh
+   npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To use this application, simply open it in a web browser and start interacting with the user interface. You can filter posts by entering search terms in the search box, and you can view details of individual posts by clicking on their titles.
+Contributing
 
-### Code Splitting
+### Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are always welcome! If you would like to contribute to this project, please follow these steps:
 
-### Analyzing the Bundle Size
+    Fork the repository
+    Create a new branch (git checkout -b feature/my-feature)
+    Commit your changes (git commit -am 'Add some feature')
+    Push to the branch (git push origin feature/my-feature)
+    Open a pull request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### License
 
-### Making a Progressive Web App
+Distributed under the MIT License. See LICENSE for more information.
+Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Contact
 
-### Advanced Configuration
+If you have any questions or comments about this project, please feel free to contact me and find more of my work on my [Github profile](https://github.com/mhperera).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Feel free to customize this template to fit your needs. Let me know if you have any questions or need further assistance.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
